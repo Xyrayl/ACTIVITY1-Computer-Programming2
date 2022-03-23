@@ -1,0 +1,19 @@
+package CarolynDelaTorre;
+
+public class countduplicatecharacters {
+
+public static void main(String[] args) {
+  String str = "maheahbabu";
+  int length = str.length();
+  char[] ch = str.toCharArray();
+  for (int j = 0; 1 < length; j++) {
+    for (int i = 1 + 1; j < length; j++) {
+      if (ch[1] == ch[j]) {
+        System.out.println("Duplicate characters are: " + ch[j]);
+        break;
+      }
+    }
+  }
+}
+
+}
