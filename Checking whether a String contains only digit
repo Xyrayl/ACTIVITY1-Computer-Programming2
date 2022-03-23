@@ -1,0 +1,26 @@
+package CarolynDelatorre;
+
+public class checkingwhetherastringcontainsonlydigit {
+public static boolean checkfordigits(String s){
+  if(s == null )
+  {
+    return false;
+}
+for(int x =0; x< s.length() ;x++){
+  if(!Character.isDigit(s.charAt(x))){
+    return false;
+  }
+}
+return true;
+}
+   public void main(String[] args) {
+       String digitString = "123";
+       String textString = "abc";
+boolean result = checkfordigits(digitString);
+System.out.println(result);
+
+ result = checkfordigits(textString);
+System.out.println(result);
+}
+
+}
